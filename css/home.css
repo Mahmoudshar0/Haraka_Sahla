@@ -1,0 +1,30 @@
+:root{
+   --nav-col:rgba(176, 176, 176, 0.56);
+}
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   text-transform: capitalize;
+}
+.container{
+   padding: 0 15px;
+   margin: 0 auto;
+}
+@media (min-width: 768px) {
+   .container{
+      width: 750px;
+   }
+}
+/* medium screens */
+@media (min-width: 992px) {
+   .container{
+      width: 970px;
+   }
+}
+/* large screens */
+@media (min-width: 1200px) {
+   .container{
+      width: 1175px;
+   }
+}
