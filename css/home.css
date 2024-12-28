@@ -7,6 +7,15 @@
    padding: 0;
    text-transform: capitalize;
 }
+body{
+   font-family: "Cairo", serif;
+}
+ul{
+   list-style-type: none;
+}
+a{
+   text-decoration: none;
+}
 .container{
    padding: 0 15px;
    margin: 0 auto;
@@ -28,3 +37,114 @@
       width: 1175px;
    }
 }
+
+/* ------------------------------------------------------ */
+
+/* start header */
+.header{
+   background-image: url('../images/home_1.png');
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+}
+.header .hide-menu{
+   position: absolute;
+   z-index: 999;
+   height: calc(100% - 80px);
+   background-color: #fff;
+   border-radius: 10px;
+   width: 40%;
+   top: 80px;
+   padding: 15px 20px;
+}
+.header .hide-menu > i{
+   font-size: 30px;
+   width: 45px;
+   height: 45px;
+   border: 3px solid black;
+   display: grid;
+   place-items: center;
+   border-radius: 50%;
+}
+.header .hide-menu ul{
+   margin-top: 50px;
+}
+.header .hide-menu ul li{
+   display: flex;
+   align-items: center;
+   margin-top: 50px;
+}
+.header .hide-menu ul li i{
+   width: 35px;
+   height: 30px;
+   font-size: 25px;
+   margin-left: 20px;
+   display: grid;
+   place-items: center;
+   color: rgb(118, 118, 118);
+   cursor: pointer;
+}
+.header .hide-menu ul li a{
+   font-size: 25px;
+   color: #000;
+   font-weight: 700;
+   transition: 0.3s;
+}
+.header .hide-menu ul li:hover a{
+   color: rgba(176, 176, 176);
+}
+/* start navbar */
+.nav{
+   background-color: rgba(176, 176, 176, 0.56);
+   backdrop-filter: blur(32px);
+}
+.nav .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.nav .container ul{
+   display: flex;
+   align-items: center;
+}
+.nav .container ul li{
+   margin: 0 10px;
+}
+.nav .container ul li a{
+   color: #000;
+   font-weight: 600;
+   padding: 5px 10px;
+   transition: 0.3s ease;
+}
+.nav .container ul li a:hover{
+   color: #fff;
+}
+.nav .container ul li:first-of-type a{
+   background-color: #000;
+   color: white;
+   border-radius: 50px;
+}
+.nav .container ul li:first-of-type a:hover{
+   background-color: rgba(176, 176, 176, 0.56);
+   color: black;
+}
+.nav .container .menu{
+   display: none;
+   font-size: 30px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.nav .container .menu:hover{
+   color: #fff;
+}
+
+@media (max-width:992px) {
+   .header .nav .container ul{
+      display: none;
+   }
+   .header .nav .container .menu{
+      display: block;
+   }
+}
+/* end navbar */
+/* end header */
