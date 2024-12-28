@@ -167,7 +167,7 @@ a{
    text-align: center;
    padding: 20px;
    border-radius: 15px;
-   width: 70%;
+   width: 80%;
 }
 .header .main-card h3{
    font-size: 64px;
@@ -181,11 +181,11 @@ a{
 }
 @media (max-width:767px) {
    .header .main-card h3{
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 700;
    }
    .header .main-card p{
-      font-size: 20px;
+      font-size: 18px;
    }
 }
 @media (max-width:991px) {
