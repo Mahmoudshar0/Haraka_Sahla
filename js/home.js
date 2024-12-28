@@ -1,3 +1,4 @@
+// Nav Bar
 let menu = document.getElementById("menu");
 function showMenu(){
    menu.style.right = "0";
