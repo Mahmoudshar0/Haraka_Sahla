@@ -438,7 +438,7 @@ h2 {
 /* Button */
 .email-form button {
     display: block;
-    width: 100%;
+    margin: 0 auto;
     background-color: #e09d00;
     color: white;
     border: none;
@@ -448,6 +448,7 @@ h2 {
     border-radius: 8px;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
+
 
 .email-form button:hover {
     background-color: #d68c00;
