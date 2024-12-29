@@ -120,8 +120,8 @@ a{
     padding: 25px 25px;
     right: -300px;
     transition: 0.3s;
- }
- .header .hide-menu > i{
+}
+.header .hide-menu > i{
     font-size: 30px;
     width: 45px;
     height: 45px;
@@ -132,15 +132,15 @@ a{
     cursor: pointer;
     transition: 0.3s;
     margin: 10px 0;
- }
- .header .hide-menu > i:hover{
+}
+.header .hide-menu > i:hover{
     background-color: #000;
     color: #fff;
- }
- .header .hide-menu ul{
+}
+.header .hide-menu ul{
     margin-top: 50px;
- }
- .header .hide-menu ul li{
+}
+.header .hide-menu ul li{
     display: flex;
     align-items: center;
     margin-top: 50px;
@@ -148,8 +148,8 @@ a{
     border-radius: 30px;
     padding-inline: 7px;
     transition: 0.3s;
- }
- .header .hide-menu ul li i{
+}
+.header .hide-menu ul li i{
     width: 35px;
     height: 30px;
     font-size: 25px;
@@ -158,45 +158,45 @@ a{
     place-items: center;
     color: rgb(118, 118, 118);
     cursor: pointer;
- }
- .header .hide-menu ul li a{
+}
+.header .hide-menu ul li a{
     font-size: 24px;
     color: #000;
     font-weight: 700;
     transition: 0.3s;
- }
- .header .hide-menu ul li.x{
+}
+.header .hide-menu ul li.x{
     background-color: black;
- }
- .header .hide-menu ul li.x a,.header .hide-menu ul li.x i{
+}
+.header .hide-menu ul li.x a,.header .hide-menu ul li.x i{
     color: white;
- }
- .header .hide-menu ul li:hover{
+}
+.header .hide-menu ul li:hover{
     background-color: black;
- }
- .header .hide-menu ul li:hover a, .header .hide-menu ul li:hover i{
+}
+.header .hide-menu ul li:hover a, .header .hide-menu ul li:hover i{
     color: rgb(255, 255, 255);
- }
- 
+}
+
  /* From Uiverse.io by svqantonio */ 
- .header .hide-menu .main {
+.header .hide-menu .main {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
     margin-top: 45px;
     align-items: center;
- }
- .header .hide-menu .main .up {
+}
+.header .hide-menu .main .up {
     display: flex;
     flex-direction: row-reverse;
     gap: 0.5em;
- }
- .header .hide-menu .main .down {
+}
+.header .hide-menu .main .down {
     display: flex;
     flex-direction: row-reverse;
     gap: 0.5em;
- }
- .header .hide-menu .main .card1 {
+}
+.header .hide-menu .main .card1 {
     width: 90px;
     height: 90px;
     outline: none;
@@ -205,13 +205,13 @@ a{
     border-radius: 90px 5px 5px 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: .2s ease-in-out;
- }
- .header .hide-menu .main .instagram {
+}
+.header .hide-menu .main .instagram {
     margin-top: 1.5em;
     margin-left: 1.2em;
     fill: rgb(118, 118, 118);
- }
- .header .hide-menu .main .card2 {
+}
+.header .hide-menu .main .card2 {
     width: 90px;
     height: 90px;
     outline: none;
@@ -220,13 +220,13 @@ a{
     border-radius: 5px 90px 5px 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: .2s ease-in-out;
- }
- .header .hide-menu .main .facebook {
+}
+.header .hide-menu .main .facebook {
     margin-top: 1.5em;
     margin-left: -.9em;
     fill: rgb(118, 118, 118);
- }
- .header .hide-menu .main .card3 {
+}
+.header .hide-menu .main .card3 {
     width: 90px;
     height: 90px;
     outline: none;
@@ -235,13 +235,13 @@ a{
     border-radius: 5px 5px 5px 90px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: .2s ease-in-out;
- }
- .header .hide-menu .main .whatsapp {
+}
+.header .hide-menu .main .whatsapp {
     margin-top: -.6em;
     margin-left: 1.2em;
     fill: rgb(118, 118, 118);
- }
- .header .hide-menu .main .card4 {
+}
+.header .hide-menu .main .card4 {
     width: 90px;
     height: 90px;
     outline: none;
@@ -250,97 +250,97 @@ a{
     border-radius: 5px 5px 90px 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: .2s ease-in-out;
- }
- .header .hide-menu .main .gmail {
+}
+.header .hide-menu .main .gmail {
     margin-top: -.9em;
     margin-left: -1.2em;
     fill: rgb(118, 118, 118);
- }
- .header .hide-menu .main .card1:hover {
+}
+.header .hide-menu .main .card1:hover {
     cursor: pointer;
     scale: 1.1;
     background-color: #cc39a4;
- }
- .header .hide-menu .main .card1:hover .instagram {
+}
+.header .hide-menu .main .card1:hover .instagram {
     fill: white;
- }
- .header .hide-menu .main .card2:hover {
+}
+.header .hide-menu .main .card2:hover {
     cursor: pointer;
     scale: 1.1;
     background-color: #1877f2;
- }
- .header .hide-menu .main .card2:hover .facebook {
+}
+.header .hide-menu .main .card2:hover .facebook {
     fill: white;
- }
- .header .hide-menu .main .card3:hover {
+}
+.header .hide-menu .main .card3:hover {
     cursor: pointer;
     scale: 1.1;
     background-color: #00ff00;
- }
- .header .hide-menu .main .card3:hover .whatsapp {
+}
+.header .hide-menu .main .card3:hover .whatsapp {
     fill: white;
- }
- .header .hide-menu .main .card4:hover {
+}
+.header .hide-menu .main .card4:hover {
     cursor: pointer;
     scale: 1.1;
     background-color: #FF0004;
- }
- .header .hide-menu .main .card4:hover .gmail {
+}
+.header .hide-menu .main .card4:hover .gmail {
     fill: white;
- }
+}
  /* start navbar */
- .nav{
+.nav{
     background-color: rgba(176, 176, 176, 0.56);
     backdrop-filter: blur(32px);
- }
- .nav .container{
+}
+.nav .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
- }
- .nav .container ul{
+}
+.nav .container ul{
     display: flex;
     align-items: center;
- }
- .nav .container ul li{
+}
+.nav .container ul li{
     margin: 0 10px;
- }
- .nav .container ul li a{
+}
+.nav .container ul li a{
     color: #000;
     font-weight: 600;
     padding: 5px 10px;
     transition: 0.3s ease;
     font-size: 20px;
- }
- .nav .container ul li a:hover{
+}
+.nav .container ul li a:hover{
     color: #fff;
- }
- .nav .container ul li.x a{
+}
+.nav .container ul li.x a{
     background-color: #000;
     color: white;
     border-radius: 50px;
- }
- .nav .container ul li.x a:hover{
+}
+.nav .container ul li.x a:hover{
     background-color: rgba(176, 176, 176, 0.56);
     color: black;
- }
- .nav .container .menu{
+}
+.nav .container .menu{
     display: none;
     font-size: 30px;
     cursor: pointer;
     transition: 0.3s;
- }
- .nav .container .menu:hover{
+}
+.nav .container .menu:hover{
     color: #fff;
- }
- @media (max-width:992px) {
+}
+@media (max-width:992px) {
     .header .nav .container ul{
-       display: none;
+        display: none;
     }
     .header .nav .container .menu{
-       display: block;
+        display: block;
     }
- }
+}
  /* end navbar */
 
  /* ----------------------------------------------- */
