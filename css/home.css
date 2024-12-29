@@ -260,14 +260,14 @@ a{
 
 @keyframes left {
    50%{
-       left: 0;
+      left: 0;
    }
    100%{
-       left: 0;
-       height: 100%;
-       border-radius: 0;
-       width: 50%;
-       top: 0;
+      left: 0;
+      height: 100%;
+      border-radius: 0;
+      width: 50%;
+      top: 0;
    }
 }@keyframes right {
    50%{
