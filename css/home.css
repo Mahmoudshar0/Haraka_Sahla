@@ -231,7 +231,7 @@ a{
 .header .hide-menu .main .instagram {
    margin-top: 1.5em;
    margin-left: 1.2em;
-   fill: #cc39a4;
+   fill: rgb(118, 118, 118);
 }
 .header .hide-menu .main .card2 {
    width: 90px;
@@ -246,7 +246,7 @@ a{
 .header .hide-menu .main .facebook {
    margin-top: 1.5em;
    margin-left: -.9em;
-   fill: #03A9F4;
+   fill: rgb(118, 118, 118);
 }
 .header .hide-menu .main .card3 {
    width: 90px;
@@ -261,7 +261,7 @@ a{
 .header .hide-menu .main .whatsapp {
    margin-top: -.6em;
    margin-left: 1.2em;
-   fill: #00ff00;
+   fill: rgb(118, 118, 118);
 }
 .header .hide-menu .main .card4 {
    width: 90px;
@@ -276,7 +276,7 @@ a{
 .header .hide-menu .main .gmail {
    margin-top: -.9em;
    margin-left: -1.2em;
-   fill: #f14336;
+   fill: rgb(118, 118, 118);
 }
 .header .hide-menu .main .card1:hover {
    cursor: pointer;
@@ -411,6 +411,27 @@ a{
    }
    .header .main-card p{
       font-size: 24px;
+   }
+   .header .hide-menu ul{
+      margin-top: 40px;
+   }
+   .header .hide-menu ul li{
+      margin-top: 40px;
+   }
+   .header .hide-menu .main{
+      margin-top: 40px;
+   }
+}
+
+@media (max-width:1200px){
+   .header .hide-menu ul{
+      margin-top: 40px;
+   }
+   .header .hide-menu ul li{
+      margin-top: 40px;
+   }
+   .header .hide-menu .main{
+      margin-top: 40px;
    }
 }
 /* end header */
