@@ -166,6 +166,10 @@ a{
    display: flex;
    align-items: center;
    margin-top: 50px;
+   padding-block: 7px;
+   border-radius: 30px;
+   padding-inline: 7px;
+   transition: 0.3s;
 }
 .header .hide-menu ul li i{
    width: 35px;
@@ -183,8 +187,17 @@ a{
    font-weight: 700;
    transition: 0.3s;
 }
-.header .hide-menu ul li:hover a{
-   color: rgba(176, 176, 176);
+.header .hide-menu ul li.x{
+   background-color: black;
+}
+.header .hide-menu ul li.x a,.header .hide-menu ul li.x i{
+   color: white;
+}
+.header .hide-menu ul li:hover{
+   background-color: black;
+}
+.header .hide-menu ul li:hover a, .header .hide-menu ul li:hover i{
+   color: rgb(255, 255, 255);
 }
 
 /* From Uiverse.io by svqantonio */ 
@@ -411,7 +424,7 @@ a{
 .info .container .cards{
    display: grid;
    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-   gap: 30px;
+   gap: 45px;
    align-items: center;
 }
 .info .container .cards .card{
