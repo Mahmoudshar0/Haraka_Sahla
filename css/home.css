@@ -1,5 +1,6 @@
 :root{
    --nav-col:rgba(176, 176, 176, 0.56);
+   --sec-pad: 50px;
 }
 *{
    box-sizing: border-box;
@@ -130,12 +131,12 @@ a{
 .nav .container ul li a:hover{
    color: #fff;
 }
-.nav .container ul li:first-of-type a{
+.nav .container ul li.x a{
    background-color: #000;
    color: white;
    border-radius: 50px;
 }
-.nav .container ul li:first-of-type a:hover{
+.nav .container ul li.x a:hover{
    background-color: rgba(176, 176, 176, 0.56);
    color: black;
 }
@@ -198,3 +199,10 @@ a{
    }
 }
 /* end header */
+
+/* ------------------------------------------------ */
+
+.info{
+   padding-block: var(--sec-pad);
+}
+.info .container {}

@@ -122,12 +122,12 @@ a{
 .nav .container ul li a:hover{
     color: #fff;
 }
-.nav .container ul li:first-of-type a{
+.nav .container ul li.x a{
     background-color: #000;
     color: white;
     border-radius: 50px;
 }
-.nav .container ul li:first-of-type a:hover{
+.nav .container ul li.x a:hover{
     background-color: rgba(176, 176, 176, 0.56);
     color: black;
 }
@@ -150,6 +150,8 @@ a{
 }
  /* end navbar */
 
+ /* ----------------------------------------------- */
+
 /* start content */
 .content {
     text-align: center;
@@ -171,13 +173,16 @@ a{
 }
 /* end content */
 
+/* -------------------------------------------------- */
+
 /* start card */
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-    padding: 10px;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 30px;
+    padding-block: 50px;
 }
 .card {
     background: #f9f9f9; 
@@ -185,8 +190,6 @@ a{
     border-radius: 16px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin-right: auto;
-    margin-left: auto;
 }
 .card img {
     width: 600px;
