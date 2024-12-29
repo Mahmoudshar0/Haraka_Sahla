@@ -184,6 +184,135 @@ a{
    color: rgba(176, 176, 176);
 }
 
+/* From Uiverse.io by svqantonio */ 
+.header .hide-menu .main {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5em;
+   margin-top: 45px;
+   align-items: center;
+}
+
+.header .hide-menu .main .up {
+   display: flex;
+   flex-direction: row-reverse;
+   gap: 0.5em;
+}
+
+.header .hide-menu .main .down {
+   display: flex;
+   flex-direction: row-reverse;
+   gap: 0.5em;
+}
+
+.header .hide-menu .main .card1 {
+   width: 90px;
+   height: 90px;
+   outline: none;
+   border: none;
+   background: white;
+   border-radius: 90px 5px 5px 5px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   transition: .2s ease-in-out;
+}
+
+.header .hide-menu .main .instagram {
+   margin-top: 1.5em;
+   margin-left: 1.2em;
+   fill: #cc39a4;
+}
+
+.header .hide-menu .main .card2 {
+   width: 90px;
+   height: 90px;
+   outline: none;
+   border: none;
+   background: white;
+   border-radius: 5px 90px 5px 5px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   transition: .2s ease-in-out;
+}
+
+.header .hide-menu .main .facebook {
+   margin-top: 1.5em;
+   margin-left: -.9em;
+   fill: #03A9F4;
+}
+
+.header .hide-menu .main .card3 {
+   width: 90px;
+   height: 90px;
+   outline: none;
+   border: none;
+   background: white;
+   border-radius: 5px 5px 5px 90px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   transition: .2s ease-in-out;
+}
+
+.header .hide-menu .main .whatsapp {
+   margin-top: -.6em;
+   margin-left: 1.2em;
+   fill: #00ff00;
+}
+
+.header .hide-menu .main .card4 {
+   width: 90px;
+   height: 90px;
+   outline: none;
+   border: none;
+   background: white;
+   border-radius: 5px 5px 90px 5px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   transition: .2s ease-in-out;
+}
+
+.header .hide-menu .main .gmail {
+   margin-top: -.9em;
+   margin-left: -1.2em;
+   fill: #f14336;
+}
+
+.header .hide-menu .main .card1:hover {
+   cursor: pointer;
+   scale: 1.1;
+   background-color: #cc39a4;
+}
+
+.header .hide-menu .main .card1:hover .instagram {
+   fill: white;
+}
+
+.header .hide-menu .main .card2:hover {
+   cursor: pointer;
+   scale: 1.1;
+   background-color: #1877f2;
+}
+
+.header .hide-menu .main .card2:hover .facebook {
+   fill: white;
+}
+
+.header .hide-menu .main .card3:hover {
+   cursor: pointer;
+   scale: 1.1;
+   background-color: #00ff00;
+}
+
+.header .hide-menu .main .card3:hover .whatsapp {
+   fill: white;
+}
+
+.header .hide-menu .main .card4:hover {
+   cursor: pointer;
+   scale: 1.1;
+   background-color: #FF0004;
+}
+
+.header .hide-menu .main .card4:hover .gmail {
+   fill: white;
+}
+
 /* start navbar */
 .nav{
    background-color: rgba(176, 176, 176, 0.56);
