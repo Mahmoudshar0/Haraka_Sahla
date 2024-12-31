@@ -13,6 +13,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <!-- emailJS CDN -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "WxOslPo8IiXN9BtWD",
+        });
+    })();
+    </script>
+
 </head>
 <body>
     <!-- start header -->
@@ -94,8 +106,10 @@
 
 <!-- end navbar -->
 
+<!-- -------------------------------------------------------------------------------------------------------------- -->
+
         <div class="container">
-            <h1>تواصل معنا</h1>
+            <h1 id="xx">تواصل معنا</h1>
             <p class="subtitle">احصل على خدماتك بسرعة وسهولة مع فريقنا المتخصص في نقل الأثاث وتنظيف المنازل.</p>
             
             <div class="section contact-info">
@@ -136,19 +150,19 @@
             <div class="section email-form">
                 <h2>طرق التواصل السريعة عبر البريد الإلكتروني</h2>
                 <p>في حال عدم قدرتك على التواصل عبر الهاتف أو الواتساب، أو إذا كان هناك ضغط ولم يتم الرد سريعاً، يمكنك إرسال رسالة عبر البريد الإلكتروني باستخدام النموذج التالي:</p>
-                <form>
+                <form id="form">
                     <label>الاسم:</label>
-                    <input type="text" name="name" placeholder="الاسم الكامل">
+                    <input id="name" type="text" name="name" placeholder="الاسم الكامل">
 
                     <label>البريد الإلكتروني:</label>
-                    <input type="email" name="email" placeholder="البريد الإلكتروني">
+                    <input style="text-transform: lowercase;" id="email" type="email" name="email" placeholder="البريد الإلكتروني">
 
                     <label>رقم الهاتف:</label>
-                    <input type="text" name="phone" placeholder="رقم الهاتف">
+                    <input id="phone" type="text" name="phone" placeholder="رقم الهاتف">
 
                     <label>محتوى الطلب:</label>
-                    <textarea name="message" placeholder="محتوى الطلب" rows="5"></textarea>
-                    <button type="submit">إرسال البريد الشخصي</button>
+                    <textarea id="message" name="message" placeholder="محتوى الطلب" rows="5"></textarea>
+                    <button id="btnForm" type="submit" onclick="sendMail()">إرسال البريد الشخصي</button>
                 </form>
             </div>
         </div>
@@ -206,5 +220,6 @@
             </div>
         </div>
 <script src="js/home.js"></script>
+<script src="js/contactUS.js"></script>
 </body>
 </html>
