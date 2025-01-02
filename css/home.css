@@ -105,9 +105,6 @@ a{
    .container{
       width: 750px;
    }
-   .white{
-      left: 80%;
-   }
 }
 /* medium screens */
 @media (min-width: 992px) {
@@ -132,9 +129,16 @@ a{
    top: 50%;
    transform: translate(-50%, -50%);
    cursor: pointer;
+   transition: 0.3s;
 }
 .fixed:hover{
-
+   background-color: var(--nav-col);
+}
+.white:hover .fas{
+   color: black;
+}
+.white:hover::after{
+   border-right-color: var(--nav-col);
 }
 .white{
 	width: 54px;
@@ -146,6 +150,7 @@ a{
    z-index: 10;
    left: 91%;
    top: 88%;
+   transition: 0.3s;
 }
 .white::before{
 	content: "";
@@ -166,6 +171,7 @@ a{
    border-color: transparent #ffcc00 transparent transparent;
    position: absolute;
    transform: rotate(-50deg) rotateX(-50deg);
+   transition: 0.3s;
 }
 .fas{
 	left: 13px;
@@ -174,6 +180,12 @@ a{
    font-size: 22px;
    color: #fff;
    transform: rotate(0deg);
+   transition: 0.3s;
+}
+@media (max-width: 800px) {
+   .white{
+      left: 83%;
+   }
 }
 
 /* ------------------------------------------------------ */
