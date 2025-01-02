@@ -25,7 +25,7 @@ body{
    z-index: 1;
 }
 .main-title:hover{
-   border-color: white;
+   border-color: black;
    color: white;
    transition-delay: 0.5s;
 }
@@ -34,7 +34,7 @@ body{
    position: absolute;
    width: 13px;
    height: 13px;
-   background-color: rgba(176, 176, 176, 0.8);
+   background-color: black;
    left: -30px;
    top: 40%;
    border-radius: 50%;
@@ -48,7 +48,7 @@ body{
    position: absolute;
    width: 13px;
    height: 13px;
-   background-color: rgba(176, 176, 176, 0.8);
+   background-color: black;
    right: -30px;
    top: 40%;
    border-radius: 50%;
