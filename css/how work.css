@@ -413,6 +413,7 @@ ul.list li::before {
 
 
 .btn {
+    
     display: inline-block;
     background: linear-gradient(45deg, #f4b41a, #ff9f1a);
     color: #fff;
@@ -421,7 +422,7 @@ ul.list li::before {
     border-radius: 25px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
