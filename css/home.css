@@ -123,6 +123,37 @@ a{
    }
 }
 
+.arrow{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background: #fff;
+   position: fixed;
+   left: 94%;
+   top: 75%;
+   cursor: pointer;
+   transition: 0.4s;
+   z-index: 1;
+   display: grid;
+   place-content: center;
+   box-shadow: 0 0 12px 0 rgba(10, 10, 10, 0.2);
+   opacity: 0;
+}
+.arrow i{
+   font-size: 30px;
+   color: var(--gold-col);
+}
+.arrow:hover{
+   background-color: rgb(196 176 176);
+}
+
+@media (max-width: 800px) {
+   .arrow{
+      left: 91%;
+   }
+}
+
+
 .fixed{
    width: 50px;
    height: 50px;
@@ -147,8 +178,8 @@ a{
 }
 
 @media (max-width: 800px) {
-   .white{
-      left: 83%;
+   .fixed{
+      left: 90%;
    }
 }
 
