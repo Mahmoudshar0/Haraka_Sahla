@@ -24,7 +24,7 @@ function slider() {
    let sliderImages = ["../images/chat1.webp","../images/forest.jpg","../images/forest2.jpg","../images/home_1.png"];
    let i = 0;
    setInterval(() => {
-      slider.style.backgroundImage = `url(${sliderImages[i]})`;
+      slider.style.backgroundImage = `url('${sliderImages[i]}')`;
       i = (i + 1) % sliderImages.length;
    }, 3000);
 }
