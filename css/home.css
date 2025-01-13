@@ -94,7 +94,6 @@ body{
    }
 }
 
-
 ul{
    list-style-type: none;
 }
@@ -124,13 +123,13 @@ a{
 }
 
 .arrow{
-   width: 40px;
-   height: 40px;
+   width: 50px;
+   height: 50px;
    border-radius: 50%;
    background: #fff;
    position: fixed;
-   left: 94%;
-   top: 75%;
+   right: 30px;
+   bottom: 130px;
    cursor: pointer;
    transition: 0.4s;
    z-index: 1;
@@ -147,21 +146,14 @@ a{
    background-color: rgb(196 176 176);
 }
 
-@media (max-width: 800px) {
-   .arrow{
-      left: 91%;
-   }
-}
-
-
 .fixed{
    width: 50px;
    height: 50px;
    border-radius: 35px;
    background: #fff;
    position: fixed;
-   left: 93%;
-   top: 83%;
+   right: 30px;
+   bottom: 70px;
    cursor: pointer;
    transition: 0.3s;
    z-index: 1;
@@ -177,11 +169,6 @@ a{
    background-color: rgb(196 176 176);
 }
 
-@media (max-width: 800px) {
-   .fixed{
-      left: 90%;
-   }
-}
 
 /* ------------------------------------------------------ */
 
@@ -192,6 +179,7 @@ a{
    background-position: center;
    height: 100vh;
    position: relative;
+   transition: 1.3s;
 }
 .header::before{
    content: "";
@@ -205,11 +193,11 @@ a{
 .header .hide-menu{
    position: absolute;
    z-index: 999;
-   height: calc(100% - 80px);
+   height: 700px;
    background-color: #fff;
    border-radius: 10px;
    width: 300px;
-   top: 80px;
+   top: 69px;
    padding: 25px 25px;
    right: -300px;
    transition: 0.3s;
@@ -218,16 +206,17 @@ a{
    font-size: 30px;
    width: 45px;
    height: 45px;
-   border: 3px solid black;
+   border: 3px solid var(--gold-col);
    display: grid;
    place-items: center;
    border-radius: 50%;
    cursor: pointer;
    transition: 0.3s;
    margin: 10px 0;
+   color: var(--gold-col);
 }
 .header .hide-menu > i:hover{
-   background-color: #000;
+   background-color: var(--gold-col);
    color: #fff;
 }
 .header .hide-menu ul{
@@ -249,7 +238,7 @@ a{
    margin-left: 20px;
    display: grid;
    place-items: center;
-   color: rgb(118, 118, 118);
+   color: var(--gold-col);
    cursor: pointer;
 }
 .header .hide-menu ul li a{
@@ -302,7 +291,7 @@ a{
 .header .hide-menu .main .instagram {
    margin-top: 1.5em;
    margin-left: 1.2em;
-   fill: rgb(118, 118, 118);
+   fill: var(--gold-col);
 }
 .header .hide-menu .main .card2 {
    width: 90px;
@@ -317,7 +306,7 @@ a{
 .header .hide-menu .main .facebook {
    margin-top: 1.5em;
    margin-left: -.9em;
-   fill: rgb(118, 118, 118);
+   fill: var(--gold-col);
 }
 .header .hide-menu .main .card3 {
    width: 90px;
@@ -332,7 +321,7 @@ a{
 .header .hide-menu .main .whatsapp {
    margin-top: -.6em;
    margin-left: 1.2em;
-   fill: rgb(118, 118, 118);
+   fill: var(--gold-col);
 }
 .header .hide-menu .main .card4 {
    width: 90px;
@@ -347,7 +336,7 @@ a{
 .header .hide-menu .main .gmail {
    margin-top: -.9em;
    margin-left: -1.2em;
-   fill: rgb(118, 118, 118);
+   fill: var(--gold-col);
 }
 .header .hide-menu .main .card1:hover {
    cursor: pointer;
@@ -381,6 +370,7 @@ a{
 .header .hide-menu .main .card4:hover .gmail {
    fill: white;
 }
+
 /* start navbar */
 .nav{
    background-color: rgba(176, 176, 176, 0.56);
@@ -593,13 +583,20 @@ a{
    border: 2px solid rgb(176 176 176 / 30%);
    box-shadow: 0px 0px 8px 0px 
    rgba(10, 10, 10, 0.2);
-   transition: 0.3s;
+   transition: background-color 0.3s;
    background-color: #fff;
    font-weight: 700;
 }
 .services .container .services-cards .card:hover{
    background-color: var(--btn-hover);
    color: var(--gold-col);
+}
+
+@media (min-width: 992px) {
+   .services .container .services-cards .card:last-child{
+      margin: 0 200px;
+      grid-column: 1 / -1;
+   }
 }
 
 /* end services */
