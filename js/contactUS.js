@@ -11,6 +11,8 @@ function sendMail(){
       message : document.getElementById("message").value
    };
    emailjs.send("service_lsl6qt8","template_khum3la",vars);
-   // alert(`name : ${vars.fromName} email : ${vars.emai=l} phone : ${vars.phone} message : ${vars.message}`);
+   document.getElementById('form').reset();
+   let msg = document.getElementById("msgdone");
+   msg.style.animationPlayState = "running";
 }
 
