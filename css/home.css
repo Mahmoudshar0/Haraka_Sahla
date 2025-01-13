@@ -433,9 +433,9 @@ a{
    transform: translate(-50%,-50%);
    background-color: rgba(176, 176, 176, 0.8);
    text-align: center;
-   padding: 25px;
+   padding: 20px;
    border-radius: 15px;
-   width: 60%;
+   width: 70%;
 }
 .header .main-card h3{
    font-size: 64px;
