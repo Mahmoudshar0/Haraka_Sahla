@@ -24,7 +24,7 @@ window.addEventListener('scroll', () => {
 // slider
 function slider() {
    let slider = document.getElementById("x");
-   let sliderImages = ["../images/forest.jpg","../images/services_4.png","../images/services_7.png","../images/home_1.png"];
+   let sliderImages = ['../images/forest.jpg','../images/services_4.png','../images/services_7.png','../images/home_1.png'];
    let i = 0;
    setInterval(() => {
       slider.style.backgroundImage = `url('${sliderImages[i]}')`;
