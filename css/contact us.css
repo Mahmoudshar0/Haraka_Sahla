@@ -1,7 +1,12 @@
 :root{
     --nav-col:rgba(176, 176, 176, 0.56);
+    --sec-pad: 70px;
+    --sec-col: rgba(200,200,200, 0.2);
+    --btn-hover: rgb(190 190 190 / 20%);
+    --gold-col: rgba(178, 130, 11, 1);
+    --sec-ln: linear-gradient(rgba(234, 234, 234, 0.9),rgba(255, 255, 255, 1),rgba(234, 234, 234, 0.9))
 }
-*{
+ *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,47 +16,50 @@ body{
     font-family: "Cairo", serif;
 }
 .main-title{
-    margin: 50px auto 20px;
-    border: 2px solid black;
+    margin: 30px auto 50px;
+    border: 1px solid black;
     padding: 10px 20px;
     width: fit-content;
-    font-size: 20px;
+    font-size: 28px;
     position: relative;
     transition: 0.3s;
     z-index: 1;
+    border-radius: 7px;
+    background-color: #ffffff;
 }
 .main-title:hover{
-    border-color: white;
+    border-color: var(--gold-col);
     color: white;
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
+    overflow: hidden;
 }
 .main-title::before{
     content: "";
     position: absolute;
     width: 13px;
     height: 13px;
-    background-color: rgba(176, 176, 176, 0.8);
+    background-color: var(--gold-col);
     left: -30px;
     top: 40%;
     border-radius: 50%;
     z-index: -1;
 }
 .main-title:hover::before{
-    animation: left 0.5s linear forwards;
+    animation: left 0.4s linear forwards;
 }
 .main-title::after{
     content: "";
     position: absolute;
     width: 13px;
     height: 13px;
-    background-color: rgba(176, 176, 176, 0.8);
+    background-color: var(--gold-col);
     right: -30px;
     top: 40%;
     border-radius: 50%;
     z-index: -1;
 }
 .main-title:hover::after{
-    animation: right 0.5s linear forwards;
+    animation: right 0.4s linear forwards;
 }
 .main-title h2{
     text-transform: uppercase;
@@ -343,18 +351,19 @@ a{
 }
  /* end navbar */
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
 .subtitle {
     text-align: center;
     font-size: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 h2 {
     font-size: 24px;
-    margin-bottom: 25px;
+    margin: 0 auto 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px 20px;
+    position: relative;
 }
 
 .section {
@@ -369,86 +378,70 @@ h2 {
 
 .highlight {
     font-weight: bold;
-    color: #e09d00;
-}
-.contact-info {
-    margin-bottom: 20px;
+    color: var(--gold-col);
 }
 
-.contact-info span {
-    margin: 5px 0;
+.contact-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+    margin: 40px 0;
+    flex-wrap: wrap;
 }
-.contact-button {
-    background-color: #e09d00;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
+
+.contact-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
     text-align: center;
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-}
-
-.contact-button:hover {
-    background-color: #d68c00;
-}
-
-.contact-icons {
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     display: flex;
-    align-items: center;
-    margin-top: 10px;
+    flex-direction: column; 
+    justify-content: space-between;
+    min-height: 200px;
 }
 
-.contact-icons img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
-.contact-method {
-    margin-bottom: 30px;
-}
-
-.contact-method p {
-    margin: 0;
-    font-size: 20px;
+.contact-title {
+    font-size: 18px;
     font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    display: flex;
 }
 
-.contact-method .details {
+.contact-details {
     display: flex;
     align-items: center;
-    margin: 10px;
+    justify-content: center;
+    margin-bottom: 20px; 
+    font-size: 16px;
+    color: #555;
 }
 
-.contact-method .details img {
-    width: 20px;
-    height: 20px;
+.contact-icon {
+    width: 24px;
+    height: 24px;
     margin-right: 10px;
+    margin-left: 5px;
 }
 
-.contact-method .details span {
-    font-size: 17px;
-}
-
-.contact-method .button {
-    margin-top: 10px;
-}
-
-.contact-method .button a {
-    display: inline-block;
-    background-color: #e09d00;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+.whatsapp-button {
+    background-color: var(--gold-col);
+    color: white;
     text-decoration: none;
-    margin-right: 20px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px; 
+    transition: background-color 0.3s ease;
 }
 
-.contact-method .button a:hover {
-    background-color: #d68c00;
+.whatsapp-button:hover {
+    background-color:var(--gold-col);
+    box-shadow: 0 4px 8px rgba(71, 50, 1, 0.5);
 }
 
 .social-media-section {
@@ -456,13 +449,19 @@ h2 {
 }
 
 .social-media-section h2 {
-    margin-bottom: 15px;
     font-size: 24px;
+    margin: 0 auto 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
 }
 
 .social-media-section p {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .social-media-buttons {
@@ -492,7 +491,7 @@ h2 {
 }
 
 .social-media-buttons a:hover {
-    background-color: #e09d00;
+    background-color:var(--gold-col);
     color: white;
     transition: 0.3s ease;
     
@@ -553,7 +552,7 @@ h2 {
 
 .email-form input:focus, 
 .email-form textarea:focus {
-    border-color: #e09d00;
+    border-color: var(--gold-col);
     outline: none;
     box-shadow: 0 0 5px rgba(224, 157, 0, 0.3);
 }
@@ -562,7 +561,7 @@ h2 {
 .email-form button {
     display: block;
     margin: 0 auto;
-    background-color: #e09d00;
+    background-color:var(--gold-col);
     color: white;
     border: none;
     padding: 12px;
@@ -574,8 +573,8 @@ h2 {
 
 
 .email-form button:hover {
-    background-color: #d68c00;
-    box-shadow: 0 4px 8px rgba(224, 157, 0, 0.4);
+    background-color:var(--gold-col);
+    box-shadow: 0 4px 8px rgba(71, 50, 1, 0.5);
 }
 
 /* Responsive Design */
