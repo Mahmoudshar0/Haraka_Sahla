@@ -90,7 +90,7 @@ body{
 }
 @media (max-width: 767px) {
    .main-title h2{
-      font-size: 29px;
+      font-size: 26px;
    }
 }
 
@@ -128,7 +128,7 @@ a{
    border-radius: 50%;
    background: #fff;
    position: fixed;
-   right: 30px;
+   right: 40px;
    bottom: 130px;
    cursor: pointer;
    transition: 0.4s;
@@ -143,7 +143,7 @@ a{
    color: var(--gold-col);
 }
 .arrow:hover{
-   background-color: rgb(196 176 176);
+   background-color: var(--sec-ln);
 }
 
 .fixed{
@@ -152,8 +152,8 @@ a{
    border-radius: 35px;
    background: #fff;
    position: fixed;
-   right: 30px;
-   bottom: 70px;
+   right: 40px;
+   bottom: 130px;
    cursor: pointer;
    transition: 0.3s;
    z-index: 1;
@@ -166,7 +166,7 @@ a{
    color: var(--gold-col);
 }
 .fixed:hover{
-   background-color: rgb(196 176 176);
+   background-color: var(--sec-ln);
 }
 
 
