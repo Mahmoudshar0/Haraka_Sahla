@@ -1,7 +1,12 @@
 :root{
     --nav-col:rgba(176, 176, 176, 0.56);
+    --sec-pad: 70px;
+    --sec-col: rgba(200,200,200, 0.2);
+    --btn-hover: rgb(190 190 190 / 20%);
+    --gold-col: rgba(178, 130, 11, 1);
+    --sec-ln: linear-gradient(rgba(234, 234, 234, 0.9),rgba(255, 255, 255, 1),rgba(234, 234, 234, 0.9))
 }
-*{
+ *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,47 +16,50 @@ body{
     font-family: "Cairo", serif;
 }
 .main-title{
-    margin: 50px auto 20px;
-    border: 2px solid black;
+    margin: 30px auto 50px;
+    border: 1px solid black;
     padding: 10px 20px;
     width: fit-content;
-    font-size: 20px;
+    font-size: 28px;
     position: relative;
     transition: 0.3s;
     z-index: 1;
+    border-radius: 7px;
+    background-color: #ffffff;
 }
 .main-title:hover{
-    border-color: white;
+    border-color: var(--gold-col);
     color: white;
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
+    overflow: hidden;
 }
 .main-title::before{
     content: "";
     position: absolute;
     width: 13px;
     height: 13px;
-    background-color: rgba(176, 176, 176, 0.8);
+    background-color: var(--gold-col);
     left: -30px;
     top: 40%;
     border-radius: 50%;
     z-index: -1;
 }
 .main-title:hover::before{
-    animation: left 0.5s linear forwards;
+    animation: left 0.4s linear forwards;
 }
 .main-title::after{
     content: "";
     position: absolute;
     width: 13px;
     height: 13px;
-    background-color: rgba(176, 176, 176, 0.8);
+    background-color: var(--gold-col);
     right: -30px;
     top: 40%;
     border-radius: 50%;
     z-index: -1;
 }
 .main-title:hover::after{
-    animation: right 0.5s linear forwards;
+    animation: right 0.4s linear forwards;
 }
 .main-title h2{
     text-transform: uppercase;
@@ -112,11 +120,11 @@ a{
 .header .hide-menu{
     position: absolute;
     z-index: 999;
-    height: calc(100% - 80px);
+    height: 700px;
     background-color: #fff;
     border-radius: 10px;
     width: 300px;
-    top: 80px;
+    top: 69px;
     padding: 25px 25px;
     right: -300px;
     transition: 0.3s;
@@ -125,16 +133,17 @@ a{
     font-size: 30px;
     width: 45px;
     height: 45px;
-    border: 3px solid black;
+    border: 3px solid var(--gold-col);
     display: grid;
     place-items: center;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.3s;
     margin: 10px 0;
+    color: var(--gold-col);
 }
 .header .hide-menu > i:hover{
-    background-color: #000;
+    background-color: var(--gold-col);
     color: #fff;
 }
 .header .hide-menu ul{
@@ -156,7 +165,7 @@ a{
     margin-left: 20px;
     display: grid;
     place-items: center;
-    color: rgb(118, 118, 118);
+    color: var(--gold-col);
     cursor: pointer;
 }
 .header .hide-menu ul li a{
@@ -209,7 +218,7 @@ a{
 .header .hide-menu .main .instagram {
     margin-top: 1.5em;
     margin-left: 1.2em;
-    fill: rgb(118, 118, 118);
+    fill: var(--gold-col);
 }
 .header .hide-menu .main .card2 {
     width: 90px;
@@ -224,7 +233,7 @@ a{
 .header .hide-menu .main .facebook {
     margin-top: 1.5em;
     margin-left: -.9em;
-    fill: rgb(118, 118, 118);
+    fill: var(--gold-col);
 }
 .header .hide-menu .main .card3 {
     width: 90px;
@@ -239,7 +248,7 @@ a{
 .header .hide-menu .main .whatsapp {
     margin-top: -.6em;
     margin-left: 1.2em;
-    fill: rgb(118, 118, 118);
+    fill: var(--gold-col);
 }
 .header .hide-menu .main .card4 {
     width: 90px;
@@ -254,7 +263,7 @@ a{
 .header .hide-menu .main .gmail {
     margin-top: -.9em;
     margin-left: -1.2em;
-    fill: rgb(118, 118, 118);
+    fill: var(--gold-col);
 }
 .header .hide-menu .main .card1:hover {
     cursor: pointer;
@@ -343,30 +352,84 @@ a{
 }
  /* end navbar */
 
-h1, h2 {
-    text-align: center;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-
-h1 {
-    font-size: 2.8rem;
-}
-
 h2 {
-    font-size: 2.2rem;
+    margin: 30px auto 50px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    width: fit-content;
+    font-size: 28px;
+    position: relative;
+    transition: 0.3s;
+    z-index: 1;
+    border-radius: 7px;
+    background-color: #ffffff;
+}
+
+h2:hover{
+    border-color: var(--gold-col);
+    color: white;
+    transition-delay: 0.2s;
+    overflow: hidden;
+}
+
+h2::before{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: var(--gold-col);
+    left: -30px;
+    top: 40%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+h2:hover::before{
+    animation: left 0.4s linear forwards;
+}
+
+h2::after{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: var(--gold-col);
+    right: -30px;
+    top: 40%;
+    border-radius: 50%;
+    z-index: -1;
+}
+h2:hover::after{
+    animation: right 0.4s linear forwards;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.4rem;
 }
 
 p {
     font-size: 1.2rem;
-    line-height: 1.8;
-    text-align: center;
+    line-height: 1.9;
     margin-bottom: 40px;
 }
 
+.subtittle{
+    font-size: 24px;
+    margin: 0 auto 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px 20px;
+    position: relative;
+}
 .step {
     background: linear-gradient(135deg, #ffffff, #f4f4f4);
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -404,43 +467,42 @@ ul.list li {
 
 ul.list li::before {
     content: "✔"; 
-    color: #f4b41a;
+    color: var(--gold-col);
     font-weight: bold;
     position: absolute;
     right: 0;
     top: 0;
 }
 
-
 .btn {
-    
-    display: inline-block;
-    background: linear-gradient(45deg, #f4b41a, #ff9f1a);
+    background:var(--gold-col);
     color: #fff;
     text-decoration: none;
     padding: 12px 30px;
     border-radius: 25px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
-    margin-top: 10px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    width: fit-content;
 }
 
-
-
 .btn:hover {
-    background: linear-gradient(45deg, #d1920f, #ff7f0e);
+    /* background: linear-gradient(45deg, #d1920f, #ff7f0e); */
     transform: scale(1.05);
 }
 
 .highlight {
-    color: #f4b41a;
+    color: var(--gold-col);
     font-weight: bold;
+    display: inline;
+    font-size: 22px;
 }
 
 .additional-services {
     padding: 30px;
     text-align: center;
-    margin-top: 50px;
 }
 
 .additional-services h2 {
@@ -449,7 +511,7 @@ ul.list li::before {
 }
 
 .additional-services p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 /* start footer */
