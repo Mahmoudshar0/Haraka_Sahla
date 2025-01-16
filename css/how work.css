@@ -409,6 +409,7 @@ h2{
 
 .intro {
     text-align: center;
+    font-size: 1.4rem;
 }
 
 p {
@@ -510,7 +511,7 @@ ul.list li::before {
 }
 
 .additional-services p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 /* start footer */
