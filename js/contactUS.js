@@ -1,5 +1,5 @@
-document.getElementById('form')
-.addEventListener('submit', function(event) {
+let form = document.getElementById('form')
+form.addEventListener('submit', function(event) {
    event.preventDefault();
 });
 function sendMail(){
@@ -15,4 +15,3 @@ function sendMail(){
    let msg = document.getElementById("msgdone");
    msg.style.animationPlayState = "running";
 }
-
