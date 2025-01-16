@@ -373,7 +373,6 @@ a{
 .content {
     text-align: center;
     margin: 70px auto 20px;
-    max-width: 800px;
 }
 .content h2 {
     border: 2px solid #000;
@@ -381,6 +380,10 @@ a{
     font-weight: 700;
     line-height: 41.6px;
     margin-bottom: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-inline: auto;
+    padding-inline: 20px;
 }
 .content p {
     font-size: 18px;
@@ -392,9 +395,6 @@ a{
 
 /* -------------------------------------------------- */
 
-.first{
-    padding-block: 50px;
-}
 /* start cards */
 .cards {
     display: grid;
@@ -439,10 +439,15 @@ a{
 .second .card:nth-child(5){
     background-image: url("../images/services_9.png");
 }
-.second .card:nth-child(6){
+.first .card:nth-child(5){
     background-image: url("../images/services_9.png");
 }
-
+@media (min-width: 992px) {
+    .cards .card:last-child {
+        margin: 0 290px;
+        grid-column: 1 / -1;
+    }
+}
 .card img {
     max-width: 100%;
 }
