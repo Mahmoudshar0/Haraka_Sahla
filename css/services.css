@@ -416,7 +416,7 @@ a{
     transition: 0.5s;
 }
 .first .card:nth-child(2){
-    background-image: url("../images/services_2.png");
+    background-image: url("../images/services_2.jpeg");
 }
 .first .card:nth-child(3){
     background-image: url("../images/services_3.png");
@@ -440,7 +440,7 @@ a{
     background-image: url("../images/services_9.png");
 }
 .first .card:nth-child(5){
-    background-image: url("../images/m.jpeg");
+    background-image: url("../images/services_10.jpeg");
 }
 @media (min-width: 992px) {
     .cards .card:last-child {
