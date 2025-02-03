@@ -440,7 +440,7 @@ a{
     background-image: url("../images/services_9.png");
 }
 .first .card:nth-child(5){
-    background-image: url("../images/services_9.png");
+    background-image: url("../images/m.jpeg");
 }
 @media (min-width: 992px) {
     .cards .card:last-child {
