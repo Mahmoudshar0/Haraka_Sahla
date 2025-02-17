@@ -15,7 +15,7 @@ let logo = document.getElementById("logo");
 function resize(){
    logo.style.width = "160px";
    logo.style.top = "-65%";
-   logo.style.right = "170px";
+   logo.style.right = "7%";
 }
 // if(window.url)
-setTimeout(resize,5000)
+setTimeout(resize,3000)
