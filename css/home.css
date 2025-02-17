@@ -375,18 +375,28 @@ a{
 .nav{
    background-color: rgba(176, 176, 176, 0.56);
    backdrop-filter: blur(32px);
+   height: 70px;
+   padding: 15px;
 }
 .nav .container{
    display: flex;
    align-items: center;
    justify-content: space-between;
 }
+
+.logo > img{
+   position: absolute;
+   width: 400px;
+   top: -60%;
+   right: 550px;
+   transition: 0.7s;
+}
 .nav .container ul{
    display: flex;
-   align-items: center;
+   align-items: end;
 }
 .nav .container ul li{
-   margin: 0 10px;
+   margin: 10px 10px;
 }
 .nav .container ul li a{
    color: #000;

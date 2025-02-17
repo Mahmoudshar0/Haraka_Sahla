@@ -301,6 +301,13 @@ a{
 .nav{
     background-color: rgba(176, 176, 176, 0.56);
     backdrop-filter: blur(32px);
+    height: 70px;
+    padding: 15px;
+}
+.logo > img{
+    position: absolute;
+    width: 160px;
+    top: -65%;
 }
 .nav .container{
     display: flex;
@@ -312,7 +319,7 @@ a{
     align-items: center;
 }
 .nav .container ul li{
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 .nav .container ul li a{
     color: #000;
