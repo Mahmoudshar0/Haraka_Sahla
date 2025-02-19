@@ -1,7 +1,7 @@
 // slider
 function slider() {
    let slider = document.getElementById("x");
-   let sliderImages = ['./../images/home_1.png','./../images/home_2.png','./../images/home_3.png','./../images/home_4.png'];
+   let sliderImages = ['/images/home_1.png','/images/home_2.png','/images/home_3.png','/images/home_4.png'];
    let i = 0;
    setInterval(() => {
       slider.style.backgroundImage = `url('${sliderImages[i]}')`;
