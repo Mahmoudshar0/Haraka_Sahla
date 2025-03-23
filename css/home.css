@@ -537,8 +537,8 @@ a{
 .info .container .cards .card h3{
    font-size: 22px;
 }
-.info .container .cards .card:nth-child(2) h3{
-   font-size: 22px;
+.info .container .cards .card:nth-child(2) h1{
+   /* font-size: 22px; */
    color: var(--gold-col);
 }
 .info .container .cards .card p{

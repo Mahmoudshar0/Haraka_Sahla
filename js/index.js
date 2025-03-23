@@ -18,4 +18,4 @@ function resize(){
    logo.style.top = "-65%";
    logo.style.right = "7%";
 }
-setTimeout(resize,3000)
+setTimeout(resize,1500)
